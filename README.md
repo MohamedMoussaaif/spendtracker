@@ -1,9 +1,10 @@
 # Nom du Projet
 Spend Tracker
-## Description
 
-"Spend Tracker" est une application web développée avec React en utilisant les Cookies de navigateur pour stoker les données.
-elle permet aux utilisateurs de gérer les dépenses financières.
+## Description
+"Spend Tracker" est une application web développée avec React en utilisant les cookies de navigateur pour stocker les données. Elle permet aux utilisateurs de gérer les dépenses financières.
+
+Vous pouvez accéder à cette application web directement via ce lien : [https://spendtracker-three.vercel.app/](https://spendtracker-three.vercel.app/). Vous pouvez également l'installer en suivant les étapes ci-dessous :
 
 ## Installation
 Instructions pour installer et configurer le projet localement.
