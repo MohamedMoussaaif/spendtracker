@@ -3,7 +3,7 @@ Spend Tracker
 ## Description
 
 "Spend Tracker" est une application web développée avec React en utilisant les Cookies de navigateur pour stoker les données.
-elle permet aux utilisateurs de gérer les dépenses financières. Cette application inclut l'ajout des transactions financières.
+elle permet aux utilisateurs de gérer les dépenses financières.
 
 ## Installation
 Instructions pour installer et configurer le projet localement.
