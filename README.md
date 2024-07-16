@@ -1,8 +1,22 @@
-# React + Vite
+# Nom du Projet
+Spend Tracker
+## Description
+Brève description de votre projet. Par exemple :
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+"Spend Tracker" est une application web développée avec React qui permet aux utilisateurs de gérer les dépenses financières. Cette application inclut l'ajout des transactions financières.
 
-Currently, two official plugins are available:
+## Installation
+Instructions pour installer et configurer le projet localement.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+# Cloner le dépôt
+git clone https://github.com/MohamedMoussaaif/spendtracker.git
+
+# Aller dans le répertoire du projet
+cd spendtracker
+
+# Installer les dépendances
+npm install
+
+# Lancer l'application en mode développement
+npm run dev
