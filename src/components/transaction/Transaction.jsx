@@ -6,14 +6,19 @@ export default function Transaction(props) {
     const [amount, setAmount] = useState('');
 
     function addTransaction () {
+
+      if(document.getElementById("amount").value == '')
+        alert("Enter Amount !!!")
+      else {
         if(transactionType == 'income') {
-            props.setIncome(parseFloat(props.income) + parseFloat(amount))
-            Cookies.set('income', parseFloat(props.income) + parseFloat(amount), { expires: 7 });
+          props.setIncome(parseFloat(props.income) + parseFloat(amount))
+          Cookies.set('income', parseFloat(props.income) + parseFloat(amount), { expires: 7 });
         } 
         else { 
           props.setExpense(parseFloat(props.expense) + parseFloat(amount))
           Cookies.set('expense', parseFloat(props.expense) + parseFloat(amount), { expires: 7 });
         }
+      }
     }
 
     
@@ -33,6 +38,7 @@ export default function Transaction(props) {
         </select>
         <input 
             type='number' 
+            id='amount'
             className='w-full text-black outline-none p-2 mb-5' 
             onChange={(e) => setAmount(e.target.value)}
         />
