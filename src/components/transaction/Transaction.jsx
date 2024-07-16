@@ -7,12 +7,12 @@ export default function Transaction(props) {
 
     function addTransaction () {
         if(transactionType == 'income') {
-            props.setIncome(props.income + parseFloat(amount))
-            Cookies.set('income', props.income + parseFloat(amount), { expires: 7 });
+            props.setIncome(parseFloat(props.income) + parseFloat(amount))
+            Cookies.set('income', parseFloat(props.income) + parseFloat(amount), { expires: 7 });
         } 
         else { 
-          props.setExpense(props.expense + parseFloat(amount))
-          Cookies.set('income', props.expense + parseFloat(amount), { expires: 7 });
+          props.setExpense(parseFloat(props.expense) + parseFloat(amount))
+          Cookies.set('expense', parseFloat(props.expense) + parseFloat(amount), { expires: 7 });
         }
     }
 
@@ -20,9 +20,6 @@ export default function Transaction(props) {
   return (
     <div className='flex flex-col'>
       <span className='mb-5 underline '>Your Transaction : </span>
-
-      <span className='text-s'>Description : </span>
-      <textarea className='w-full text-black outline-none p-2 mb-5' />
 
       <span className='text-s'>Amount : </span>
       <div className="flex flex-row">
@@ -35,7 +32,7 @@ export default function Transaction(props) {
             <option value="expense">-</option>
         </select>
         <input 
-            type='text' 
+            type='number' 
             className='w-full text-black outline-none p-2 mb-5' 
             onChange={(e) => setAmount(e.target.value)}
         />
